@@ -11,6 +11,12 @@
 		FEAA77E329B86D5600F79851 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAA77E229B86D5600F79851 /* ContentView.swift */; };
 		FEAA77E529B86D5800F79851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAA77E429B86D5800F79851 /* Assets.xcassets */; };
 		FEAA77E829B86D5800F79851 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAA77E729B86D5800F79851 /* Preview Assets.xcassets */; };
+		FEAA77F029B86EAD00F79851 /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAA77EF29B86EAD00F79851 /* Create.swift */; };
+		FEAA77F229B86FE700F79851 /* Inspiration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAA77F129B86FE700F79851 /* Inspiration.swift */; };
+		FEAA77F429B8700100F79851 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAA77F329B8700100F79851 /* Settings.swift */; };
+		FEAA77F629B8719800F79851 /* GeneratedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAA77F529B8719800F79851 /* GeneratedResults.swift */; };
+		FEAA77F829B8737C00F79851 /* GenerateImageDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAA77F729B8737C00F79851 /* GenerateImageDetails.swift */; };
+		FEAA77FA29B8747700F79851 /* PayWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAA77F929B8747600F79851 /* PayWall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		FEAA77E229B86D5600F79851 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FEAA77E429B86D5800F79851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEAA77E729B86D5800F79851 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FEAA77EF29B86EAD00F79851 /* Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create.swift; sourceTree = "<group>"; };
+		FEAA77F129B86FE700F79851 /* Inspiration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspiration.swift; sourceTree = "<group>"; };
+		FEAA77F329B8700100F79851 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		FEAA77F529B8719800F79851 /* GeneratedResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedResults.swift; sourceTree = "<group>"; };
+		FEAA77F729B8737C00F79851 /* GenerateImageDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageDetails.swift; sourceTree = "<group>"; };
+		FEAA77F929B8747600F79851 /* PayWall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 		FEAA77DF29B86D5600F79851 /* AI Art Image Generator */ = {
 			isa = PBXGroup;
 			children = (
+				FEAA77EE29B86E9900F79851 /* Screens */,
 				FEAA77E029B86D5600F79851 /* AI_Art_Image_GeneratorApp.swift */,
 				FEAA77E229B86D5600F79851 /* ContentView.swift */,
 				FEAA77E429B86D5800F79851 /* Assets.xcassets */,
@@ -65,6 +78,19 @@
 				FEAA77E729B86D5800F79851 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEAA77EE29B86E9900F79851 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FEAA77EF29B86EAD00F79851 /* Create.swift */,
+				FEAA77F129B86FE700F79851 /* Inspiration.swift */,
+				FEAA77F329B8700100F79851 /* Settings.swift */,
+				FEAA77F529B8719800F79851 /* GeneratedResults.swift */,
+				FEAA77F729B8737C00F79851 /* GenerateImageDetails.swift */,
+				FEAA77F929B8747600F79851 /* PayWall.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEAA77F229B86FE700F79851 /* Inspiration.swift in Sources */,
+				FEAA77F029B86EAD00F79851 /* Create.swift in Sources */,
+				FEAA77F629B8719800F79851 /* GeneratedResults.swift in Sources */,
 				FEAA77E329B86D5600F79851 /* ContentView.swift in Sources */,
 				FEAA77E129B86D5600F79851 /* AI_Art_Image_GeneratorApp.swift in Sources */,
+				FEAA77FA29B8747700F79851 /* PayWall.swift in Sources */,
+				FEAA77F429B8700100F79851 /* Settings.swift in Sources */,
+				FEAA77F829B8737C00F79851 /* GenerateImageDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

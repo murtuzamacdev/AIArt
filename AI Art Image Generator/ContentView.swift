@@ -8,14 +8,49 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+    @State private var selectedTab = 0
+    @State var showPayWall = true
+       
+       var body: some View {
+           
+           NavigationView{
+               TabView(selection: $selectedTab) {
+                   Create()
+                       .tabItem {
+                           Image(systemName: "1.circle")
+                           Text("Create")
+                       }
+                       .tag(0)
+                   
+                   Inspiration()
+                       .tabItem {
+                           Image(systemName: "2.circle")
+                           Text("Inspiration")
+                       }
+                       .tag(1)
+                   
+                   Settings()
+                       .tabItem {
+                           Image(systemName: "3.circle")
+                           Text("Settings")
+                       }
+                       .tag(2)
+               }
+           }.fullScreenCover(isPresented: $showPayWall) {
+                      PayWall()
+                   }
+           
+           
+       }
+}
+
+struct NavigationLazyView<Content: View>: View {
+    let build: () -> Content
+    init(_ build: @autoclosure @escaping () -> Content) {
+        self.build = build
+    }
+    var body: Content {
+        build()
     }
 }
 
