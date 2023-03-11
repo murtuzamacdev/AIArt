@@ -11,20 +11,24 @@ struct Inspiration: View {
     @State var goToImageDetailsPage = false
     
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
             // Navigation link to next page
             NavigationLink(destination: NavigationLazyView(GenerateImageDetails()), isActive: $goToImageDetailsPage) {
                 EmptyView()
             }
             
             
-            Text("Inspiration grid will show here")
-            Button {
-                self.goToImageDetailsPage.toggle()
-            } label: {
-                Text("select Image")
+//            Text("Prompt Inspiration")
+//                .font(.title)
+//                .fontWeight(.bold)
+//                .multilineTextAlignment(.leading)
+            
+            ScrollView {
+                ImagesGrid()
             }
-        }
+            
+            
+        }.padding(.horizontal).frame(minWidth: 0,maxWidth: .infinity,minHeight: 0,maxHeight: .infinity,alignment: .topLeading)
     }
 }
 
